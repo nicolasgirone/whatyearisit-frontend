@@ -1,5 +1,5 @@
-fetch('https://whatyearisit-backend-taupe.vercel.app')
+fetch('https://whatyearisit-backend-taupe.vercel.app/year')
  .then(response => response.json())
  .then(data => {
-   document.querySelector('#year').textContent = data.year;
+   document.querySelector('#year').innerHTML += data.year;
  });
